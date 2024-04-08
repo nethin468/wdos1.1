@@ -1,0 +1,27 @@
+[
+    {
+        "heading": "Department of Wildlife Conservation",
+        "paragraphs":"Key objectives of the Department of Wildlife Conservation include habitat management, wildlife research, and the prevention of illegal activities such as poaching and habitat destruction. The department is actively involved in establishing and maintaining protected areas, national parks, and wildlife sanctuaries, where native species can thrive undisturbed, Wildlife conservation efforts in Sri Lanka are often intertwined with broader environmental and sustainability initiatives, acknowledging the interconnectedness of ecosystems and the importance of preserving natural balances. Additionally, the department engages in community outreach and education programs to raise awareness about the significance of biodiversity conservation and to foster a sense of responsibility among the local population"
+    },
+
+    {
+        "heading2": "About us",
+        "paragraphs": "The Department of Wildlife Conservation (DWC) is the main government institution responsible for the conservation and management of the wildlife resources of Sri Lanka. The DWC was established in 1949 as the Game Department, and later renamed as the Department of Wildlife Conservation in 1972. The DWC is mandated to enforce the provisions of the Fauna and Flora Protection Ordinance and the National Environmental Act, to conserve the biodiversity and ecosystems of the country, and to promote the sustainable use of wildlife resources for the benefit of the present and future generations.Since 1993, a special project was launched under the title of “Development of Wildlife Conservation and Protected Area Management”, within the Department. Under this project, funded by UNDP/FAO through Global Environmental Facility (GEF), long term management plans were prepared for all leading wildlife protected areas and a intensive human resource development programme was implemented. Increase of the departmental cadre, research on wildlife, production of public educational materials, formulation of a wild elephant conservation strategy, were the other outcomes of this project, which concluded by the end of 1999."
+    },
+
+    {
+        "heading3": "Our protected areas",
+        "paragraphs": "The DWC manages over 100 protected areas, covering about 13% of the land area of Sri Lanka. These include national parks, nature reserves, sanctuaries, and buffer zones. These protected areas are home to a rich diversity of flora and fauna, including many endemic and threatened species. Some of the most famous protected areas are",
+        "images": [
+            "images/sinharaja8.jpg","images/hortonplains8.jpg","images/yala9.jpg","images/willpattu8.jpg"
+        ]
+        
+    },
+
+    {
+
+        "heading4": "Their location",
+        "paragraphs": "The DWC headquarters is located at No. 811/A, Jayanthipura, Battaramulla, Sri Lanka. You can contact us by phone at +94 11 288 8585 or by email at info@dwc.gov.lk. You can also visit our website at [www.dwc.gov.lk]for more information. Here is a Google map of our location",
+        "frame": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9457027556227!2d79.91723077359119!3d6.897098018712017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705058688733!5m2!1sen!2slk"
+    }
+]

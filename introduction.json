@@ -1,0 +1,38 @@
+[
+    {
+        "heading": "Discover Sri Lanka's Diverse Wildlife",
+        "images": [
+            "images/hortonplains-intro.jpg","images/hortonplains2-intro.jpg"
+        ]
+    },
+
+    {
+        "heading2": "Horton Plains National Park",
+        "paragraphs": "Nestled in the central highlands, Horton Plains National Park is a UNESCO World Heritage Site, Horton Plains is the highest plateau in Sri Lanka, with an elevation of 2,100–2,300 m (6,900–7,500 ft), and it covers an area of 3,160 hectares The park is renowned for its unique biodiversity, striking landscapes, and a variety of endemic flora and fauna. One of the most iconic features of Horton Plains is World's End, a sheer precipice that offers breathtaking views of the surrounding valleys and tea plantations. The park also encompasses Baker's Falls, a beautiful waterfall that adds to the park's natural allure. The terrain primarily consists of montane grasslands and cloud forests, creating a distinct and captivating environment.Numerous indigenous species can be found in Horton Plains, such as the highland sambar deer and the secretive Horton Plains slender loris. It is also an important watershed for Sri Lanka's main rivers, which makes it a crucial region for managing water resources and conserving wildlife.",
+        "frame": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.6739945880904!2d80.79975837359046!3d6.809451319777205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3882edb4b78ef%3A0xcebca89153777249!2sHorton%20Plains%20National%20Park!5e0!3m2!1sen!2slk!4v1704715479925!5m2!1sen!2slk"
+        
+    },
+
+    {
+        "heading3": "Sinharaja Forest Reserve",
+        "paragraph": [
+            "Southern Province","Sinharaja Rainforest, a UNESCO World Heritage Site, is a pristine tropical rainforest located in the southwest lowland wet zone of Sri Lanka. Spanning an area of approximately 11,187 hectares, it is one of the last remaining primary rainforests on the island and is renowned for its exceptional biodiversity and ecological significance.Sinharaja is home to numerous endemic species, including the purple-faced langur, the Sri Lankan leopard, and a variety of colorful birds such as the Sri Lanka blue magpie. The forest also harbors a rich diversity of insects, amphibians, and reptiles, contributing to its status as a biodiversity hotspot."
+        ],
+        "images2": [
+            "images/sinharaja2-intro.jpg","images/sinharaja-intro.jpg"
+    ],
+        "frame2": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.8991152230155!2d80.4574516735875!3d6.406996124509135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3e76bd109d45f%3A0x8c0ef1010649701b!2sSinharaja%20Forest%20Reserve!5e0!3m2!1sen!2slk!4v1704715519947!5m2!1sen!2slk"
+    },
+
+    {
+        "heading4": "Summary Table: Noteworthy Wildlife in Sri Lankan Locations",
+        "tabledata1": [
+            "Horton Plains National Park","Sri Lankan Sambar Deer","The largest deer species in Sri Lanka, known for its distinctive appearance with large, rugged antlers.",
+            "images/sambar-deer.jpg"
+        ],
+        "tabledata2": [
+            "Sinharaja Forest Reserve","Purple-faced Langur","An endangered primate species with a distinctive purple face, found exclusively in Sri Lanka.",
+            "images/purple-faced.jpg"
+        ]
+    }
+]

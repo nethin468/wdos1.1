@@ -1,0 +1,38 @@
+[
+    {
+        "heading1": "Yala National Park",
+        "paragraphs1": "Yala National Park is the most visited and second largest national park in Sri Lanka. It is home to the highest density of leopards in the world, with an estimated 25 individuals in Block I alone.",
+        "images1": "images/yalapage4.jpg"
+    },
+
+    {
+        "heading2": "Wilpattu National Park",
+        "paragraphs2": "Wilpattu National Park is the largest and oldest national park in Sri Lanka. It is known for its natural lakes, called villus, which attract a variety of wildlife. Leopards are often seen near the water sources, especially during the dry season.",
+        "images2": "images/willpattupage4.jpg"
+    },
+
+    {
+        "heading3": "Sinharaja Forest Reserve",
+        "paragraphs3": "Sinharaja Forest Reserve is a UNESCO World Heritage Site and a biodiversity hotspot. It is the last remaining lowland rainforest in Sri Lanka, and hosts many endemic species of flora and fauna. Leopards are rare but present in the reserve, and are mostly active at night.",
+        "images3": "images/sinharajapage4.jpg"
+    },
+
+    {
+        "heading4": "Threats to Leopards",
+        "sub-heading": "Poaching",
+        "paragraph4": [
+            "Poaching is one of the major threats to leopards in Sri Lanka. Leopards are killed for their skins, bones, teeth, and claws, which are used for traditional medicine, ornaments, and trophies. Poachers also target leopards' prey, such as deer and wild boar, reducing their food availability.",
+            "To reduce poaching, the government has enacted laws to protect leopards and their habitats, and has increased patrols and surveillance in the national parks. Additionally, some NGOs and conservation groups are working to raise awareness and educate the local communities about the importance of leopards and their role in the ecosystem."
+
+        ],
+        "images4": [
+            "images/poaching.jpg","images/habitat-loss.jpg"
+        ],
+        "sub-heading2": "Habitat Loss",
+        "paragraphs5": [
+            "Habitat loss is another major threat to leopards in Sri Lanka. Leopards' habitats are being destroyed or fragmented by human activities, such as deforestation, agriculture, urbanization, and infrastructure development. This reduces the leopards' living space, and exposes them to conflicts with humans and domestic animals.",
+            "To mitigate habitat loss, the government has established protected areas, such as national parks and forest reserves, where leopards and other wildlife can live safely. Furthermore, some NGOs and conservation groups are working to restore and reconnect the leopards' habitats, and to promote coexistence and tolerance between humans and leopards."
+        ]
+    }
+
+]

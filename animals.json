@@ -1,0 +1,32 @@
+[
+    {
+        "heading": "Animals in Sri Lanka",
+        "paragraphs": [
+            "Sri Lanka is an island country in the Indian Ocean. Despite its small size, Sri Lanka is host to a great diversity of flora and fauna. About 123 mammalian species live in the country including many threatened ones. One species is critically endangered, ten each are endangered and vulnerable, and three species are near threatened. Sri Lanka also has high levels of endemism. 23% of all flowering plants and 16% of the fauna found in this country occur nowhere else in the world.",
+            "Some of the most iconic mammalian fauna of Sri Lanka are the Sri Lankan elephant, the Sri Lankan leopard, the Sri Lankan sloth bear, the toque macaque, the purple-faced langur, the golden palm civet, and the Sri Lankan brown palm civet",
+            "Sri Lanka also has a rich birdlife with 215 species, including six endemic ones. Some of the notable birds are the Sri Lankan junglefowl, the Sri Lanka blue magpie, the Sri Lanka grey hornbill, the Sri Lanka green pigeon, and the Sri Lanka white-eye",
+            "If you want to see these amazing animals in their natural habitats, you can visit some of the national parks and wildlife sanctuaries in Sri Lanka. Two of the most popular ones are Yala National Park and Wilpattu National Park. These parks offer safari tours, camping facilities, and educational programs for visitors. You can also learn about the history and culture of Sri Lanka, as these parks have hosted several ancient civilizations and Buddhist pilgrim sites."
+        ]
+    },
+    {
+        "heading2": "Endemic Animals In Sri Lanka",
+        "paragraphs": [
+            "The Sri Lankan junglefowl (Gallus lafayettii), also known as the Ceylon junglefowl, is a colorful and distinctive bird native to Sri Lanka. It is the national bird of Sri Lanka and is closely related to the domestic chicken. The male junglefowl is characterized by its vibrant plumage, featuring a combination of red, orange, and yellow feathers, with a striking blue and red facial patch and long, glossy black tail feathers. In contrast, the female is more subdued in appearance, with brown and buff-colored feathers",
+            "The Sri Lankan sloth bear (Melursus ursinus inornatus)Sloth bears are characterized by their shaggy, long black fur, distinctive whitish V or Y-shaped markings on their chest, and a light-colored snout."
+        ],
+        "images": [
+            "images/junglefowl.jpg",
+            "images/sloth-bear.jpg"
+        ]
+         
+    },
+    {
+
+        "heading3": "To Learn More About The Parks Visit The Links Provided Below",
+        "references": [
+            "yala.html",
+            "willpattu.html"
+        ]
+    }
+]
+

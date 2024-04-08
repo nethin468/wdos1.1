@@ -1,0 +1,132 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color:  #9F784A;
+}
+
+.yala-heading {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  position: relative;
+}
+
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.navigation{
+  background-color: #333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+} 
+.relinks{
+  list-style-type: none;
+}
+.relinks li{
+display: inline-block;
+}
+.relinks li a{
+  padding: 10px;
+  color: #fff;
+}
+
+.yala {
+  height: 400px;
+  width: 600px;
+}
+
+.main {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid navy;
+  padding: 20px;
+  background-color: white;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+
+main img:hover {
+  animation-name: rotate;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotate {
+  50% {
+  transform: rotate(10deg);
+  }
+}
+
+main p {
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+main p span {
+  font-weight: bold;
+  color: navy;
+}
+
+
+main p a {
+  color: navy;
+  text-decoration: underline;
+}
+
+section {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid navy;
+  padding: 20px;
+  background-color: white;
+}
+
+section img {
+  display: block;
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+section h2 {
+  font-size: 24px;
+  color: navy;
+  text-align: center;
+}
+
+section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+section ul li {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px;
+  border: 1px solid navy;
+  padding: 10px;
+}
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(114, 129, 142);
+}
+
+.about-us {
+  width: 33%;
+}
