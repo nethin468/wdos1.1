@@ -19,6 +19,7 @@
                 <li><a href="dwc.html">DWC</a></li>
                 <li><a href="SL-Leopard.html">SL Leopard</a></li>
                 <li><a href="animals.html">Animals</a></li>
+                <li><a href="./login.html">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -26,10 +27,11 @@
     <title>Sri Lankan Leopard</title>
 </head>
 <body>
+    <div id="content"></div>
     <hr>
         <div class=main>
             <div class=card>
-                <!-- <img class="page4"  img src="images/yalapage4.jpg" alt="Yala National Park"> -->
+                <img class="page4"  img src="images/yalapage4.jpg" alt="Yala National Park">
                 <h3>Yala National Park</h3>
                 <p>Yala National Park is the most visited and second largest national park in Sri Lanka. It is home to the highest density of leopards in the world, with an estimated 25 individuals in Block I alone.</p>
             </div>
@@ -94,8 +96,27 @@
             <li><a href="animals.html">Animals</a></li>
             <li><a href="yala.html">Yala</a></li>
             <li><a href="willpattu.html">Wilpattu</a></li>
+            <li><a href="./login.html">Login</a></li>
           </ul>
         </div>
+        <div class="newsletter">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form id="newsletterForm">
+              <input
+                type="email"
+                id="emailInput"
+                placeholder="Your email address"
+                required
+              />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          <div class="admin-dashboard">
+            <h2>Admin Dashboard</h2>
+            <ul id="subscriptionList"></ul>
+          </div>
       </div>
+      <script src="footer.js" defer></script>
+      <script src="admin.js" defer></script>
 </body>
 </html>

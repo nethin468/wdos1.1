@@ -2,7 +2,7 @@ fetch("dwc.json")
 .then(response => response.json())
 .then(data => {
     localStorage.setItem("department",JSON.stringify(data))
-    // Extract relevant information from the JSON data
+    
     const heading = data[0].heading;
     const heading2 = data[1].heading2;
     const heading3 = data[2].heading3;
@@ -17,10 +17,8 @@ fetch("dwc.json")
 
     const frame = data[3].frame;
 
-    // Populate the HTML elements with the fetched data
     const container = document.querySelector(".container");
 
-    // Add content for Department of Wildlife Conservation
     container.innerHTML += `
         <div class="header">
             <h1>${heading}</h1>
@@ -28,7 +26,7 @@ fetch("dwc.json")
         </div>
     `;
 
-    // Add content for About Us
+    
     container.innerHTML += `
         <hr>
         <div class="intro">
@@ -37,7 +35,6 @@ fetch("dwc.json")
         </div>
     `;
 
-    // Add content for Our Protected Areas
     container.innerHTML += `
         <hr>
         <div class="gallery">
@@ -49,7 +46,7 @@ fetch("dwc.json")
         </div>
     `;
 
-    // Add content for Their Location
+
     container.innerHTML += `
         <hr>
         <div class="map">

@@ -1,7 +1,7 @@
 fetch("index.json")
         .then(response => response.json())
         .then(data => {
-            localStorage.setItem("department",JSON.stringify(data))
+            localStorage.setItem("index",JSON.stringify(data))
             const introParagraph = data[0].paragraphs;
             const introImage = data[0].images;
 
@@ -17,7 +17,6 @@ fetch("index.json")
             const sec3Paragraph = data[4].paragraphs;
             const sec3Images = data[4].images;
 
-            // Populate the HTML elements with the fetched data
             const introduction = document.querySelector(".introduction");
             introduction.innerHTML = `
                 <p class="introduction-para1">${introParagraph}</p>

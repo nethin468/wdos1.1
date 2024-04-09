@@ -18,6 +18,7 @@
                 <li><a href="dwc.html">DWC</a></li>
                 <li><a href="SL-Leopard.html">SL Leopard</a></li>
                 <li><a href="animals.html">Animals</a></li>
+                <li><a href="./login.html">Login</a></li>
             </ul>
         </div>
     </nav>
@@ -30,12 +31,12 @@
       </div>
       <hr>
       <div class="endemic-heading">
-        <h2>Endemic Animals In Srilanka</h2>
+        <!-- <h2>Endemic Animals In Srilanka</h2> -->
         <div class="endemic">
-        <p>The Sri Lankan junglefowl (Gallus lafayettii), also known as the Ceylon junglefowl, is a colorful and distinctive bird native to Sri Lanka. It is the national bird of Sri Lanka and is closely related to the domestic chicken. The male junglefowl is characterized by its vibrant plumage, featuring a combination of red, orange, and yellow feathers, with a striking blue and red facial patch and long, glossy black tail feathers. In contrast, the female is more subdued in appearance, with brown and buff-colored feathers</p>
+        <!-- <p>The Sri Lankan junglefowl (Gallus lafayettii), also known as the Ceylon junglefowl, is a colorful and distinctive bird native to Sri Lanka. It is the national bird of Sri Lanka and is closely related to the domestic chicken. The male junglefowl is characterized by its vibrant plumage, featuring a combination of red, orange, and yellow feathers, with a striking blue and red facial patch and long, glossy black tail feathers. In contrast, the female is more subdued in appearance, with brown and buff-colored feathers</p> -->
         <img class="endemic-animals" img src="images/junglefowl.jpg"></div>
         <div class="endemic">
-            <p>The Sri Lankan sloth bear (Melursus ursinus inornatus)Sloth bears are characterized by their shaggy, long black fur, distinctive whitish V or Y-shaped markings on their chest, and a light-colored snout.</p>
+            <!-- <p>The Sri Lankan sloth bear (Melursus ursinus inornatus)Sloth bears are characterized by their shaggy, long black fur, distinctive whitish V or Y-shaped markings on their chest, and a light-colored snout.</p> -->
             <img class="endemic-animals" img src="images/sloth-bear.jpg"></div>
       </div>
       <hr>
@@ -43,13 +44,7 @@
 <p><a href="yala.html">Yala National Park</a></p>
 <p><a href="willpattu.html">Willpattu National Park</a></p>
 <div class="footer">
-  <div class="newsletter">
-    <h2>Subscribe to Our Newsletter</h2>
-    <form action="#" method="post">
-        <input type="email" id="newsletter-email" name="email" placeholder="Enter your email" required>
-        <button type="submit">Subscribe</button>
-    </form>
-</div>
+
     <div class="about-us">
       <h2>About Us</h2>
       <p>
@@ -74,9 +69,29 @@
         <li><a href="animals.html">Animals</a></li>
         <li><a href="yala.html">Yala</a></li>
         <li><a href="willpattu.html">Wilpattu</a></li>
+        <li><a href="login.html">Login</a></li>
       </ul>
+    </div>
+    <div class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <form id="newsletterForm">
+        <input
+          type="email"
+          id="emailInput"
+          placeholder="Your email address"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="admin-dashboard">
+      <h2>Admin Dashboard</h2>
+      <ul id="subscriptionList"></ul>
     </div>
   </div>
   <script src="animals.js"></script>
+  <script src="footer.js" defer></script>
+  <script src="admin.js" defer></script>
+  
 </body>
 </head>

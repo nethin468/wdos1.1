@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Subscription Dashboard</title>
+   <script async src="dashboard.js"defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Newsletter Subscription Dashboard</h1>
+        <div class="textarea-container">
+            <label for="newsletterTextarea">Newsletter Subscriptions:</label>
+            <textarea id="newsletterTextarea" placeholder="Enter email addresses here..." rows="5"></textarea>
+        </div>
+        <button onclick="subscribe()">Subscribe</button>
+    </div>
+
+    <script>
+        function subscribe() {
+            const textarea = document.getElementById('newsletterTextarea');
+            const emails = textarea.value.trim().split('\n');
+            // Here you can add code to handle the subscription process, such as sending the list of emails to your server
+            console.log('Subscribed emails:', emails);
+            alert('Subscribed successfully!');
+            // Clear the textarea after subscribing
+            textarea.value = '';
+        }
+    </script>
+</body>
+</html>

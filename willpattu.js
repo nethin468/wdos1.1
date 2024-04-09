@@ -1,59 +1,10 @@
 
-// function fetchData() {
-    
-//     fetch('willpattu.json')
-//     .then(response => response.json())
-//     .then(data => renderContent(data))
-//     .catch(error => console.error('Error fetching data:', error));
-// }
-
-// function renderContent(data) {
-//     document.querySelector('.willpattu-heading h1').textContent = 'Willpattu National Park';
-//     document.querySelector('.main img').value = data[0].images[0];
-//     document.querySelector('.main p').textContent = data[0].paragraphs[0];
-
-//     document.querySelector('section img').value = data[0].images[1];
-//     document.querySelector('section p').textContent = data[0].paragraphs[1];
-
-//     const factsList = document.createElement('ul');
-//     data[1].lists.forEach(item => {
-//         const listItem = document.createElement('li');
-//         listItem.textContent = item;
-//         factsList.appendChild(listItem);
-//     });
-//     document.querySelector('section h2').textContent = data[1].heading;
-//     document.querySelector('section').appendChild(factsList);
-// }
-
-// window.onload = fetchData;
-
-// function renderContent(data) {
-//     document.querySelector('.willpattu-heading h1').textContent = 'Willpattu National Park';
-
-//     // Update the first image and paragraph
-//     document.querySelector('.main img').src = data[0].images[0]; // Use src instead of value for image elements
-//     document.querySelector('.main p').textContent = data[0].paragraphs[0];
-
-//     // Update the second image and paragraph
-//     document.querySelector('.section img').src = data[0].images[1];
-//     document.querySelector('.section p').textContent = data[0].paragraphs[1];
-
-//     // Update the facts section
-//     const factsList = document.createElement('ul');
-//     data[1].lists.forEach(item => {
-//         const listItem = document.createElement('li');
-//         listItem.textContent = item;
-//         factsList.appendChild(listItem);
-//     });
-//     document.querySelector('.section h2').textContent = data[1].heading; // Use .section instead of 'section'
-//     document.querySelector('.section').appendChild(factsList); // Use .section instead of 'section'
-// }
 
 function fetchData() {
     fetch('willpattu.json')
     .then(response => response.json())
     .then(data => renderContent(data))
-    localStorage.setItem("department",JSON.stringify(data))
+    localStorage.setItem("willpattu",JSON.stringify(data))
     .catch(error => console.error('Error fetching data:', error));
 }
 

@@ -1,15 +1,14 @@
-/* Base styles */
+
 body {
     font-family: Arial, sans-serif;
 }
 
-/* Form container */
 form {
     max-width: 400px;
     margin: 0 auto;
 }
 
-/* Form fields */
+
 .form-group {
     margin-bottom: 20px;
 }
@@ -27,7 +26,7 @@ form {
     border-radius: 5px;
 }
 
-/* Checkbox */
+
 .form-checkbox {
     width: 20px;
     height: 20px;
@@ -38,7 +37,6 @@ form {
     font-size: 14px;
 }
 
-/* Submit button */
 .btn-submit {
     background-color: #007bff;
     color: #fff;

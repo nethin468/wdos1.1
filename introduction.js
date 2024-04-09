@@ -1,129 +1,155 @@
+fetch("introduction.json")
+  .then((response) => response.json())
+  .then((data) => {
+    localStorage.setItem("introduction",JSON.stringify(data))
+    renderIntroduction(data);
+  })
+  .catch((error) => console.error("Error fetching data:", error));
 
-                
-//                 data.forEach(location => {
-//                     console.log(location)
-//                     const locationCard = document.createElement('div');
-//                     locationCard.classList.add('location-card');
-//                     locationCard.innerHTML = `
-//                         <div class="image-content">
-//                             <div class="second-image">
-//                                 <img class="another-image" src="${location.images[0]}" />
-//                             </div>
-//                             <div class="second-image">
-//                                 <img class="another-image" src="${location.images[1]}" />
-//                             </div>
-//                         </div>
-//                         <div class="location-details">
-//                             <h2>${location.heading}</h2>
-//                             <p><strong>Location:</strong> ${location.paragraphs[0]}</p>
-//                             <p><strong>Description:</strong> ${location.paragraphs[1]}</p>
-//                             <iframe src="${location.frame}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-//                         </div>
-//                     `;
-//                     document.querySelector('.container').appendChild(locationCard);
-//                 });
+function renderIntroduction(data) {
+  if (!Array.isArray(data) || data.length < 4) {
+    console.error("Data structure is invalid.");
+    return;
+  }
 
-               
-//                 const summaryTableBody = document.querySelector('.summary-table tbody');
-//                 data.forEach(location => {
-//                     summaryTableBody.innerHTML += `
-//                         <tr>
-//                             <td>${location.heading}</td>
-//                             <td>${location.tabledata1[1]}</td>
-//                             <td>${location.tabledata1[2]}</td>
-//                             <td><img src="${location.tabledata1[3]}" alt="${location.tabledata1[1]}"></td>
-//                         </tr>
-//                     `;
-//                 });
-//             })
-//             .catch(error => console.error("Error fetching data:", error));
+  const heading = document.createElement("h1");
+  heading.textContent = data[0].heading || "";
+  document.querySelector(".container").prepend(heading);
 
-// introduction.js
+  const imageContainer = document.querySelector(
+    ".location-card .image-content"
+  );
+  if (data[0].images && Array.isArray(data[0].images)) {
+    data[0].images.forEach((imageUrl) => {
+      const img = document.createElement("img");
+      img.src = imageUrl;
+      imageContainer.appendChild(img);
+    });
+  } else {
+    console.error("Images data is missing or invalid.");
+  }
 
-const wildlifeDataUrl = './introduction.json'; // Replace with the path to your JSON file
+  if (data[1]) {
+    renderLocationDetails(data[1]);
+  } else {
+    console.error("Horton Plains National Park data is missing.");
+  }
 
-async function fetchWildlifeData() {
-  try {
-    const response = await fetch(wildlifeDataUrl);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
-    const wildlifeData = await response.json();
-    return wildlifeData;
-  } catch (error) {
-    console.error('Error fetching wildlife data:', error);
-    return []; // Handle errors gracefully, like displaying an error message
+  if (data[2]) {
+    renderLocationDetails(data[2]);
+  } else {
+    console.error("Sinharaja Forest Reserve data is missing.");
+  }
+
+  if (data[3]) {
+    renderSummaryTable(data[3]);
+  } else {
+    console.error("Summary table data is missing.");
   }
 }
 
-async function renderWildlifeData(data) {
-  const container = document.querySelector('.container');
+function renderLocationDetails(locationData) {
+  const locationCard = document.createElement("div");
+  locationCard.classList.add("location-card");
 
-  for (const { heading, images, ...rest } of data) {
-    const locationCard = document.createElement('div');
-    locationCard.classList.add('location-card');
+  const imagesContainer = document.createElement("div");
+  imagesContainer.classList.add("image-content");
 
-    if (heading) {
-      const locationHeading = document.createElement('h2');
-      locationHeading.textContent = heading;
-      locationCard.appendChild(locationHeading);
-    }
-
-    const imageContainer = document.createElement('div');
-    imageContainer.classList.add('image-content');
-
-    if (images) {
-      for (const image of images) {
-        const locationImage = document.createElement('img');
-        locationImage.src = image;
-        locationImage.alt = 'Sri Lankan Wildlife';
-        imageContainer.appendChild(locationImage);
-      }
-    }
-
-    locationCard.appendChild(imageContainer);
-
-    if (rest.paragraphs) {
-      const description = document.createElement('p');
-      description.innerHTML = rest.paragraphs.join('<br>'); // Join paragraph elements
-      locationCard.appendChild(description);
-    }
-
-    if (rest.frame) {
-      const locationFrame = document.createElement('iframe');
-      locationFrame.src = rest.frame;
-      locationFrame.setAttribute('width', '100%');
-      locationFrame.setAttribute('height', '450');
-      locationFrame.setAttribute('allowfullscreen', '');
-      locationFrame.setAttribute('loading', 'lazy');
-      locationCard.appendChild(locationFrame);
-    }
-
-    container.appendChild(locationCard);
+  if (
+    locationData.images2 &&
+    Array.isArray(locationData.images2) &&
+    locationData.images2.length > 0
+  ) {
+    locationData.images2.forEach((imageUrl) => {
+      const img = document.createElement("img");
+      img.src = imageUrl;
+      imagesContainer.appendChild(img);
+    });
+  } else {
+    console.error("Images data is missing or invalid.");
   }
 
-  // Render summary table data (optional)
-  const summaryTable = document.querySelector('.summary-table tbody');
-  if (data[3] && data[3].tabledata1) {
-    for (const rowData of [data[3].tabledata1, data[3].tabledata2]) {
-      const tableRow = document.createElement('tr');
-      for (const cellData of rowData) {
-        const tableCell = document.createElement('td');
-        if (typeof cellData === 'string') {
-          tableCell.textContent = cellData;
-        } else {
-          const image = document.createElement('img');
-          image.src = cellData;
-          image.alt = 'Wildlife Image';
-          tableCell.appendChild(image);
-        }
-        tableRow.appendChild(tableCell);
-      }
-      summaryTable.appendChild(tableRow);
-    }
+  locationCard.appendChild(imagesContainer);
+
+  const detailsContainer = document.createElement("div");
+  detailsContainer.classList.add("location-details");
+
+  const heading = document.createElement("h2");
+  heading.textContent = locationData.heading3 || locationData.heading2;
+  detailsContainer.appendChild(heading);
+
+  if (Array.isArray(locationData.paragraph)) {
+    locationData.paragraph.forEach((paragraph) => {
+      const p = document.createElement("p");
+      p.textContent = paragraph;
+      detailsContainer.appendChild(p);
+    });
+  } else {
+    const p = document.createElement("p");
+    p.textContent = locationData.paragraphs;
+    detailsContainer.appendChild(p);
   }
+
+  const iframe = document.createElement("iframe");
+  iframe.src = locationData.frame2 || locationData.frame;
+  iframe.width = "100%";
+  iframe.height = "450";
+  iframe.style.border = "0";
+  iframe.allowFullscreen = "";
+  iframe.loading = "lazy";
+  iframe.referrerPolicy = "no-referrer-when-downgrade";
+  detailsContainer.appendChild(iframe);
+
+  locationCard.appendChild(detailsContainer);
+
+  document.querySelector(".container").appendChild(locationCard);
 }
 
-fetchWildlifeData()
-  .then(data => renderWildlifeData(data))
-  .catch(error => console.error(error));
+function renderSummaryTable(tableData) {
+  const table = document.createElement("table");
+  table.classList.add("summary-table");
+
+  const thead = document.createElement("thead");
+  const headRow = document.createElement("tr");
+  ["Location", "Wildlife", "Interesting Facts", "Image"].forEach((text) => {
+    const th = document.createElement("th");
+    th.textContent = text;
+    headRow.appendChild(th);
+  });
+  thead.appendChild(headRow);
+  table.appendChild(thead);
+
+  const tbody = document.createElement("tbody");
+  [tableData.tabledata1, tableData.tabledata2].forEach((data) => {
+    const row = document.createElement("tr");
+    data.forEach((text, index) => {
+      const cell =
+        index === data.length - 1
+          ? document.createElement("td")
+          : document.createElement("td");
+      if (index === data.length - 1) {
+        const img = document.createElement("img");
+        img.src = text;
+        img.alt = "Image";
+        cell.appendChild(img);
+      } else {
+        cell.textContent = text;
+      }
+      row.appendChild(cell);
+    });
+    tbody.appendChild(row);
+  });
+  table.appendChild(tbody);
+
+  const tfoot = document.createElement("tfoot");
+  const footRow = document.createElement("tr");
+  const footCell = document.createElement("td");
+  footCell.colSpan = "4";
+  footCell.textContent =
+    "Explore the diverse landscapes of Sri Lanka and witness the fascinating wildlife that thrives beyond the well-trodden paths of Yala and Wilpattu. Each location offers a unique glimpse into the rich natural heritage of this tropical jewel.";
+  footRow.appendChild(footCell);
+  tfoot.appendChild(footRow);
+  table.appendChild(tfoot);
+
+  document.querySelector(".container").appendChild(table);
+}
